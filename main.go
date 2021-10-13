@@ -1,27 +1,32 @@
 package main
 
 import (
-	"errors"
 	"fmt"
-)
 
-// Возвращаемая ошибка
-// nolint
-func Foo(s string) (string, error) {
-	if s == "" {
-		return s, errors.New("empty string s")
-	}
-	return "ok", nil
-}
+	"github.com/fladago/gbmodone/homework"
+)
 
 func main() {
 	// nolint
-	// Break()
-	// NestedBreak()
-	// Continue()
-	// ContinueToLabel()
-	arr := []int{3, 520, 20, 3, 2, 13, 7}
-	fmt.Println(BubbleSort(arr))
-	arr2 := []int{3, 520, 20, 3, 2, 13, 7}
-	fmt.Println(BubbleSort2(arr2))
+	// Task1
+	// var length, width float64
+	// fmt.Print("Add length of rectangle area: ")
+	// length = homework.InputNumber()
+	// fmt.Print("Add width of rectangle area: ")
+	// width = homework.InputNumber()
+	// area := homework.RectangleArea(length, width)
+	// fmt.Println(reflect.TypeOf(area))
+	// fmt.Printf("Rectangle area is: %0.2f", area)
+
+	// Task 2
+	// fmt.Print("Add area: ")
+	// height, diametr := homework.CircleArea()
+	// fmt.Println(height, diametr)
+
+	// Task 3
+	fmt.Print("Add digit: ")
+	digsl := homework.Digits()
+	for _, v := range digsl {
+		fmt.Println(v)
+	}
 }
